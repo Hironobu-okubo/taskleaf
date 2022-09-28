@@ -1,10 +1,10 @@
 class Admin::UsersController < ApplicationController
   def index
-    @user = user.all
+    @users = User.all
   end
   
   def show
-    @user = user.find(params[:id])
+    @user = User.find(params[:id])
   end
   
   def new
